@@ -1,5 +1,5 @@
 #!/bin/bash
-# quote variants
+# quote-variants.sh
 a=ape
 b="bat"
 c='cat'

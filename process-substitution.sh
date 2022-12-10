@@ -1,5 +1,5 @@
 #!/bin/bash
-# process substitution
+# process-substitution.sh
 echo >(true)         # /dev/fd/63. A file made by process substitution.
 echo <(true)         # /dev/fd/63. A file made by process substitution.
 echo >(true) <(true) # /dev/fd/63 /dev/fd/62. Files made by process substitution.

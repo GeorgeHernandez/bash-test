@@ -1,5 +1,5 @@
 #!/bin/bash
-# a simple hello world test
+# hello-world.sh
 echo Hello, World!
 which bash  # get bash path for user
 echo "$SHELL" # get bash path

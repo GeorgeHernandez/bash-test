@@ -1,5 +1,5 @@
 #!/bin/bash
-# Pattern & substitution expansion
+# pattern-substitution.sh
 str=abeaceadeabe
 echo ${str/a??/ACK}  # ACKaceadeabe
 echo ${str//a?/AA}   # AAeKAAeAAeAAe

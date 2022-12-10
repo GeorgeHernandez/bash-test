@@ -1,5 +1,5 @@
 #!/bin/bash
-# function test
+# function-test.sh
 fun1 () {
   local x='local'
   echo "In fun1, x is ${x}" # local

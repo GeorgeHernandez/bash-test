@@ -1,5 +1,5 @@
 #!/bin/bash
-# Case substitution expansion
+# case-substitution.sh
 title="The Lord of the Rings"
 upp=${title^^}
 low=${title,,}
