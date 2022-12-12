@@ -2,9 +2,9 @@
 .DS_Store
 .loadpath
 .LSOverride
-.obsidian
+.obsidian/
 .settings/
-.vscode
+.vscode/
 [Dd]ebug*/
 [Ll]og/
 [Tt]emp/
@@ -22,6 +22,6 @@
 Desktop.ini
 ehthumbs.db
 local.properties
-node_modules
+node_modules/
 temp.*
 Thumbs.db
