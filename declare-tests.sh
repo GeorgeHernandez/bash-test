@@ -56,11 +56,11 @@ echo "#iarC[*]: ${#iarC[*]}" # get member count: 1
 echo "iarA: ${iarA}"         # get 1st member value since no key specified
 for i in "${iarB[*]}";  do echo "$i"; done # show member values: a b c h
 for j in "${!iarB[*]}"; do echo "$j"; done # show member keys:   0 1 2 7
-unset iarB[1]                # delete member
+unset "iarB[1]"                # delete member
 echo "iarB[*]: ${iarB[*]}"   # a c h
 readonly -a iarD=(a b c d)   # explicit declaration & assignment but readonly
 echo "iarD[*]: ${iarD[*]}"   # a b c d
-unset iarD[1]                # delete from a readonly variable should fail
+unset "iarD[1]"                # delete from a readonly variable should fail
 echo "iarD[*]: ${iarD[*]}"   # a b c d
 
 
@@ -69,7 +69,7 @@ echo "iarD[*]: ${iarD[*]}"   # a b c d
 echo
 echo 'Begin -A associative array tests'
 aarA[a]=ape                  # implicit creation & assignment
-echo "aarA[*]: ${iarA[*]}"   # ape
+echo "aarA[*]: ${aarA[*]}"   # ape
 declare -A aarB[b]=bat       # explicit declaration & assignment
 echo "aarB[*]: ${aarB[*]}"   # bat
 aarB+=([a]=ape [c]=cat [e]=elf) # add members
